@@ -3,7 +3,6 @@
    ============================================================ */
 
 const questions = [
-  [
     {
       question: "Quel symbole représente une lampe dans un schéma électrique ?",
       options: ["Un cercle avec une croix", "Un rectangle avec un trait", "Un rond avec un L", "Un trait en zigzag"],
@@ -104,7 +103,6 @@ const questions = [
       bonne_reponse: "Pour couper manuellement le courant en cas d’urgence",
       explication: "Le coupe-circuit permet d’interrompre manuellement l’alimentation électrique d’un circuit en cas de danger ou de maintenance."
     }
-  ]
 ];
 
 /* ============================================================
