@@ -4,76 +4,109 @@
 
 const questions = [
 
-{
-    question: "Quelle est cette figure géométrique ?",
-    options: ["Cube", "Cylindre", "Cône", "Boule"],
-	graphique: "graphique1.png",
-    bonne_reponse: "Cube",
-    explication: "Un cube possède 6 faces carrées toutes identiques."
+[
+  {
+    "question": "Quel symbole représente une lampe dans un schéma électrique ?",
+    "options": ["Un cercle avec une croix", "Un rectangle avec un trait", "Un rond avec un L", "Un trait en zigzag"],
+    "graphique": "symbole_lampe.png",
+    "bonne_reponse": "Un cercle avec une croix",
+    "explication": "Dans les schémas électriques normalisés, une lampe est représentée par un cercle avec une croix à l’intérieur."
   },
   {
-    question: "Quelle est cette figure géométrique ?",
-    options: ["Pavé droit", "Cube", "Pyramide", "Cône"],
-	graphique: "graphique2.png",
-    bonne_reponse: "Pavé droit",
-    explication: "Un pavé droit possède 6 faces rectangulaires."
+    "question": "Que représente ce symbole dans un schéma électrique ?",
+    "options": ["Un interrupteur", "Un moteur", "Une prise de courant", "Une pile"],
+    "graphique": "symbole_interrupteur.png",
+    "bonne_reponse": "Un interrupteur",
+    "explication": "Ce symbole, un trait avec un petit rond ou une ligne brisée, correspond à un interrupteur qui permet d’ouvrir ou de fermer un circuit."
   },
   {
-    question: "Quelle est cette figure géométrique ?",
-    options: ["Pyramide", "Cube", "Boule", "Cylindre"],
-	graphique: "graphique3.png",
-    bonne_reponse: "Pyramide",
-    explication: "Une pyramide possède une base et des faces triangulaires qui se rejoignent en un sommet."
+    "question": "Quel symbole correspond à une pile dans un schéma électrique ?",
+    "options": ["Un trait horizontal", "Un rectangle", "Un long trait et un court trait parallèles", "Un cercle"],
+    "graphique": "symbole_pile.png",
+    "bonne_reponse": "Un long trait et un court trait parallèles",
+    "explication": "La pile est représentée par deux traits parallèles de longueurs différentes, le plus long étant la borne positive."
   },
   {
-    question: "Quelle est cette figure géométrique ?",
-    options: ["Cylindre droit", "Cône", "Boule", "Pavé droit"],
-	graphique: "graphique4.png",
-    bonne_reponse: "Cylindre droit",
-    explication: "Un cylindre droit possède deux bases circulaires et une surface latérale courbe."
+    "question": "Quel outil utilise-t-on pour dénuder un fil électrique avant de le brancher ?",
+    "options": ["Un tournevis", "Une pince à dénuder", "Un marteau", "Une clé à molette"],
+    "graphique": "pince_denuder.png",
+    "bonne_reponse": "Une pince à dénuder",
+    "explication": "La pince à dénuder permet d’enlever l’isolant autour du fil sans abîmer le conducteur en cuivre."
   },
   {
-    question: "Quelle est cette figure géométrique ?",
-    options: ["Cône", "Cylindre", "Pyramide", "Boule"],
-	graphique: "graphique5.png",
-    bonne_reponse: "Cône",
-    explication: "Un cône possède une base circulaire et un sommet."
+    "question": "Dans quel ordre doit-on brancher les éléments d’un circuit série : lampe, interrupteur, pile ?",
+    "options": [
+      "Pile → lampe → interrupteur",
+      "Interrupteur → pile → lampe",
+      "Pile → interrupteur → lampe",
+      "L’ordre n’a pas d’importance"
+    ],
+    "graphique": "circuit_serie.png",
+    "bonne_reponse": "L’ordre n’a pas d’importance",
+    "explication": "Dans un circuit série, l’ordre des dipôles n’influence pas le fonctionnement, tant que le circuit est fermé."
   },
   {
-    question: "Quelle est cette figure géométrique ?",
-    options: ["Boule", "Cube", "Cylindre", "Pavé droit"],
-	graphique: "graphique6.png",
-    bonne_reponse: "Boule",
-    explication: "Une boule est entièrement ronde et ne possède ni face, ni arête, ni sommet."
+    "question": "Quel est le rôle d’un fusible dans un circuit électrique ?",
+    "options": [
+      "Protéger contre les surcharges et les courts-circuits",
+      "Augmenter la tension du circuit",
+      "Réguler l’intensité du courant",
+      "Allumer automatiquement les lampes"
+    ],
+    "graphique": "fusible.png",
+    "bonne_reponse": "Protéger contre les surcharges et les courts-circuits",
+    "explication": "Le fusible fond et coupe le circuit en cas de surintensité, protégeant ainsi les appareils et les fils."
   },
   {
-    question: "Parmi ces solides, lequel possède uniquement des faces carrées ?",
-    options: ["Cube", "Pavé droit", "Pyramide", "Cylindre"],
-	graphique: "graphique7.png",
-    bonne_reponse: "Cube",
-    explication: "Le cube est composé uniquement de faces carrées."
+    "question": "Quel dispositif protège les personnes contre les risques d’électrocution en détectant les fuites de courant ?",
+    "options": [
+      "Un fusible",
+      "Un disjoncteur différentiel",
+      "Un coupe-circuit",
+      "Un disjoncteur divisionnaire"
+    ],
+    "graphique": "disjoncteur_differentiel.png",
+    "bonne_reponse": "Un disjoncteur différentiel",
+    "explication": "Le disjoncteur différentiel coupe automatiquement le courant s’il détecte une différence d’intensité entre la phase et le neutre, signe d’une fuite vers la terre."
   },
   {
-    question: "Parmi ces solides, lequel possède une base circulaire et un sommet ?",
-    options: ["Cône", "Cylindre", "Boule", "Cube"],
-	graphique: "graphique8.png",
-    bonne_reponse: "Cône",
-    explication: "Le cône possède une base circulaire et un sommet unique."
+    "question": "À quoi sert la mise à la terre dans une installation électrique ?",
+    "options": [
+      "À améliorer la qualité du courant",
+      "À protéger les appareils en cas de surintensité",
+      "À évacuer les courants de défaut vers le sol",
+      "À augmenter la puissance disponible"
+    ],
+    "graphique": "mise_a_la_terre.png",
+    "bonne_reponse": "À évacuer les courants de défaut vers le sol",
+    "explication": "La mise à la terre permet d’évacuer vers le sol les courants de défaut, protégeant ainsi les personnes et les matériels."
   },
   {
-    question: "Quel solide possède deux bases circulaires identiques ?",
-    options: ["Cylindre droit", "Cône", "Boule", "Pyramide"],
-	graphique: "graphique9.png",
-    bonne_reponse: "Cylindre droit",
-    explication: "Le cylindre droit possède deux bases circulaires identiques."
+    "question": "Quel est le rôle d’un disjoncteur divisionnaire ?",
+    "options": [
+      "Protéger un circuit spécifique contre les surcharges",
+      "Mesurer la consommation électrique",
+      "Remplacer un fusible",
+      "Augmenter la tension du circuit"
+    ],
+    "graphique": "disjoncteur_divisionnaire.png",
+    "bonne_reponse": "Protéger un circuit spécifique contre les surcharges",
+    "explication": "Le disjoncteur divisionnaire protège un circuit électrique en coupant le courant en cas de surcharge ou de court-circuit."
   },
   {
-    question: "Quel solide ne possède aucune face plane ?",
-    options: ["Boule", "Cône", "Cylindre", "Cube"],
-	graphique: "graphique10.png",
-    bonne_reponse: "Boule",
-    explication: "La boule est entièrement ronde et ne possède aucune face plane."
+    "question": "Pourquoi utilise-t-on un coupe-circuit dans une installation électrique ?",
+    "options": [
+      "Pour économiser de l’énergie",
+      "Pour couper manuellement le courant en cas d’urgence",
+      "Pour augmenter la puissance du circuit",
+      "Pour mesurer la tension"
+    ],
+    "graphique": "coupe_circuit.png",
+    "bonne_reponse": "Pour couper manuellement le courant en cas d’urgence",
+    "explication": "Le coupe-circuit permet d’interrompre manuellement l’alimentation électrique d’un circuit en cas de danger ou de maintenance."
   }
+]
+
 
 ];
 
